@@ -1942,6 +1942,21 @@ p {
     }
 }
 
+@media (min-width: 381px) {
+    .google-map-address {
+        width: 235px !important;
+    }
+}
+
+
+@media (max-width: 380px) {
+    .google-map-address {
+        width: 190px !important;
+    }
+}
+
+
+
 .footer_link .link {
     padding-top: 15px;
 }
