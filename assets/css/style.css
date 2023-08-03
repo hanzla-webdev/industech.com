@@ -648,23 +648,23 @@ p {
 }
 
 .sticky .navbar {
-    padding: 0;
+    padding: 3px 0 0 0;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
     .sticky .navbar {
-        padding: 18px 0;
+        padding: 9px 0;
     }
 }
 
 @media (max-width: 767px) {
     .sticky .navbar {
-        padding: 15px 0;
+        padding: 6px 0;
     }
 }
 
 .navbar {
-    padding: 0;
+    padding: 3px 0 0 0;
     border-radius: 5px;
     position: relative;
     -webkit-transition: all 0.3s ease-out 0s;
@@ -676,13 +676,13 @@ p {
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
     .navbar {
-        padding: 20px 0;
+        padding: 14px 0;
     }
 }
 
 @media (max-width: 767px) {
     .navbar {
-        padding: 20px 0;
+        padding: 9px 0;
     }
 }
 
@@ -999,9 +999,25 @@ p {
     padding-top: 90px;
 }
 
+@media (max-width: 991px) {
+    .header_slider {
+        padding-top: 73px;
+    }
+}
+
 @media (max-width: 767px) {
     .header_slider {
-        padding-top: 80px;
+        padding-top: 68px;
+    }
+}
+
+@media (max-width: 400px) {
+    .header_slider {
+        padding-top: 60px;
+        /* border-radius: 0px; */
+    }
+    .single_slider {
+        /* border-radius: 0px; */
     }
 }
 
