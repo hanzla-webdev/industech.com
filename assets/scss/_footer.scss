@@ -121,27 +121,27 @@
 
 /*===== BACK TO TOP =====*/
 
-.back-to-top{
-    font-size: 20px;
-    color: $white;
-    position: fixed;
-    right: 20px;
-    bottom: 20px;
-    width: 45px;
-    height: 45px;
-    line-height: 50px;
-    border-radius: 5px;
-    background-color: $theme-color;
-    text-align: center;
-    z-index: 99;
-    @include transition(0.3s);
-    display: none;
+// .back-to-top{
+//     font-size: 20px;
+//     color: $white;
+//     position: fixed;
+//     right: 20px;
+//     bottom: 20px;
+//     width: 45px;
+//     height: 45px;
+//     line-height: 50px;
+//     border-radius: 5px;
+//     background-color: $theme-color;
+//     text-align: center;
+//     z-index: 99;
+//     @include transition(0.3s);
+//     // display: none;
     
-    &:hover{
-        color: $white;
-        background-color: $theme-color;
-    }
-}
+//     &:hover{
+//         color: $white;
+//         background-color: $theme-color;
+//     }
+// }
 
 
 
