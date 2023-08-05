@@ -798,7 +798,7 @@ p {
 
 @media (max-width: 768px) {
     .header-banner-image {
-        background: url(./assets/images/header-banner-mobile.png) no-repeat center center/cover;
+        background: url('../images/header-banner-mobile.png') no-repeat center center/cover;
         /* height: 335px; */
         /* width: 100%; */
         display: inline-block;
