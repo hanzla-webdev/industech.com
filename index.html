@@ -17,7 +17,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!--====== Favicon Icon ======-->
-    <link rel="shortcut icon" href="assets/images/logo.png" type="image/png">
+    <link rel="shortcut icon" href="assets/images/logo-nav.png" type="image/png">
 
     <!--====== Slick CSS ======-->
     <link rel="stylesheet" href="assets/css/slick.css">
@@ -39,6 +39,64 @@
 
     <!--====== Style CSS ======-->
     <link rel="stylesheet" href="assets/css/style.css">
+
+    <style>
+
+    .header-banner-image {
+        /* display: inline-block;
+        width: 5rem;
+        height: .8rem; */
+        /* z-index: 5; */
+        /* width: 20rem; */
+    }
+        @media (max-width: 768px) {
+    .header-banner-image {
+        background: url(./assets/images/header-banner-mobile.png) no-repeat center center/cover;
+        /* height: 335px; */
+        /* width: 100%; */
+        display: inline-block;
+        margin-left: -4rem;
+        width: 10.7rem;
+        height: 4.35rem;
+    }
+    }
+    @media (min-width: 576px) and (max-width: 767px) {
+    /* Your CSS rules for screens between 575px and 768px */
+     .header-banner-image {
+        margin-left: -11rem;
+        width: 15rem;
+        height: 5rem;
+     }
+    }
+
+    @media (min-width: 389px) and (max-width: 575px) {
+    /* Your CSS rules for screens between 575px and 768px */
+     .header-banner-image {
+        /* margin-left: -11rem; */
+        width: 12rem;
+        height: 4.2rem;
+     }
+    }
+
+    @media (min-width: 991px) and (max-width: 1257px) {
+    /* Your CSS rules for screens between 575px and 768px */
+     .header-banner-image {
+        /* margin-left: -11rem; */
+        width: 20rem;
+        height: 2rem;
+     }
+    }
+
+    @media (min-width: 769px) and (max-width: 990) {
+    /* Your CSS rules for screens between 575px and 768px */
+     .header-banner-image {
+        margin-left: -50rem;
+        /* width: 20rem; */
+        /* height: 2rem; */
+     }
+    }
+
+    </style>
 
 </head>
 
@@ -79,9 +137,16 @@
                     <div class="col-lg-12">
                         <nav class="navbar navbar-expand-lg">
                             <a class="navbar-brand" href="index.html">
-                                <img src="./assets/images/logo.png" alt="Logo">
+                                <img src="./assets/images/logo-nav.png" alt="Logo">
+
+                               
                                 <!-- <h3 class="logo-heading">  <span style="color: #0898E7;"> IndTech </span> Calibration & Inspection Services (Pvt.) Ltd  </h3> -->
                             </a>
+
+                            <div class="header-banner-image">
+                                <img src="./assets/images/header-banner-image.png" style="width: 31rem; height: 23.1rem;" class="d-none d-md-block" alt="">
+                             </div>
+
                             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                                 <span class="toggler-icon"></span>
                                 <span class="toggler-icon"></span>
@@ -115,7 +180,7 @@
                             </div>
                             <!-- navbar collapse -->
 
-                            <div class="navbar-btn d-none d-sm-inline-block">
+                            <div class="navbar-btn d-none d-lg-inline-block">
                                 <a class="main-btn" data-scroll-nav="0" href="#services">Get Started</a>
                             </div>
                         </nav>
@@ -919,7 +984,7 @@
                 <div class="row">
                     <div class="col-lg-3 col-md-6 order-md-1 order-lg-1">
                         <div class="footer_about mt-50">
-                            <a href="#">
+                            <a href="index.html">
                                 <img src="./assets/images/logo.png" alt="">
                             </a>
                             <p>Stay connected and up-to-date with the latest news, posts, and insights on IndTech Calibration & Inspection Services (Pvt.) Ltd. Follow us on social media for more.</p>
