@@ -1485,7 +1485,7 @@ p {
 .single_services {
     -webkit-box-shadow:0px 4px 16px 0px rgb(0 13 20 / 15%);
     -moz-box-shadow: 0px 4px 16px 0px rgb(0 13 20 / 15%);
-    box-shadow: 0px 4px 16px 0px rgb(0 13 20 / 15%);
+    box-shadow: 0px 4px 16px 0px rgb(0 13 20 / 18%);
     -webkit-transition: all 0.3s ease-out 0s;
     -moz-transition: all 0.3s ease-out 0s;
     -ms-transition: all 0.3s ease-out 0s;
