@@ -11,6 +11,8 @@
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css" integrity="sha512-QKC1UZ/ZHNgFzVKSAhV5v5j73eeL9EEN289eKAEFaAjgAiobVAnVv/AGuPbXsKl1dNoel3kNr6PYnSiTzVVBCw==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
     <!-- <link href="https://cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet"> -->
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css" /> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 
@@ -44,7 +46,32 @@
     <link rel="stylesheet" href="assets/css/services.css">
 
 
+    <style>
+        @media (max-width: 991px) {
+            #about {
+                padding-top: 7rem;
+            }
 
+            .about_image img {
+                width: 300px;
+                height: 300px;
+                /* padding-top: .7rem; */
+                /* padding: 0; */
+                margin: auto;
+            }
+
+            .certificate-area img {
+                width: 100% !important;
+            }
+            
+            .about_content p{
+                font-size: 1.1rem !important;
+            }
+            .about_content h3{
+                font-size: 2.1rem !important;
+            }
+        }
+    </style>
 
 </head>
 
@@ -67,7 +94,6 @@
             </div>
         </div>
     </div>
-
 
     <header class="header_area">
         <div class="header_navbar">
@@ -135,153 +161,86 @@
         </div>
 
     </header>
+    <!-- certification starts their  -->
 
-    <!-- addding pressure section -->
-    <section padding-top="3rem" class="main-content">
+    <section id="about" style="background-color:#e7e6e6;" class="about_area pt-50">
         <div class="container">
-            <div style="margin: 1rem 0;">
+            <div class="row align-items-center">
 
-                <!-- <div class="services-main-pic">
-                    <img src="./assets/images/about-1.jpg" alt="Service" " class=" overlay-image">
-                    <div class="overlay"></div>
-                    <h1 class="centered-heading">Force & Torque</h1>
-                </div> -->
-<div class="one">
-    
-    <h2 style="text-align: center;  color: #0898E7;" class=" p-4 mb-4  rounded-lg">The Importanceof Routine
-        Calibration and Inspection</h2>
-</div>
-
-                <!-- <h3 class="my-4">Lifting Equipment Inspection, Crane Inspection & Accessories Inspection</h3> -->
-
+                <div class="col-lg-6">
+                    <div class="about_content mt-23 mt-sm-50">
+                        <div class="section_title">
+                            <!-- <h4 class="sub_title"> Why IndTech Calibration & Inspection Services (Pvt.) Ltd </h4> -->
+                            <h3 style="font-size: 2.5rem;" class="title">Certifications / Registrations</h3>
+                        </div>
+                        <!-- section title -->
+                        <p class="small-p" style="font-size: 1.3rem; line-height: 2.2rem;">IndTech Calibration & Inspection Services
+                            (Pvt.) Ltd are proudly registered with SECP
+                            (Securities & Exchange Commission of Pakistan) and FBR (Federal
+                            Board of Revenue, Government of Pakistan)</p>
 
 
-                <h3>1. Why Calibration and Inspection Matter:</h3>
-                <div class="px-4">
-                    <p class="services-p">Calibration and inspection are fundamental pillars that underpin accuracy,
-                        safety, and compliance
-                        across various industries. They play a pivotal role in maintaining quality standards and
-                        ensuring
-                        reliable operations.</p>
-
-                    <h4> Enhancing Accuracy</h4>
-                    <p class="services-p">Accurate measurements are the bedrock of successful processes. Calibration
-                        fine-tunes instruments,
-                        ensuring that measurements align precisely with intended values. This process eliminates errors,
-                        enhances consistency, and fosters confidence in data-driven decisions.</p>
-
-                    <h4> Quality Assurance</h4>
-                    <p class="services-p">Inspection is a critical tool in maintaining product quality. By identifying
-                        deviations from
-                        established standards, it prevents defects and irregularities. Quality assurance through regular
-                        inspection ensures that only products meeting the highest standards reach the market.</p>
-
-                    <h4> Safety First</h4>
-                    <p class="services-p">Calibration and inspection contribute significantly to workplace safety.
-                        Well-calibrated instruments
-                        and thoroughly inspected equipment reduce the risk of accidents and malfunctions, creating a
-                        secure
-                        environment for both personnel and operations.</p>
-
-                    <h4> Compliance and Regulations</h4>
-                    <p class="services-p">In many industries, adherence to regulations and standards is mandatory.
-                        Calibration and inspection
-                        are essential to ensure that equipment meets these requirements. Conforming to industry
-                        standards
-                        not only avoids legal complications but also upholds the reputation of the business.</p>
+                    </div>
+                    <!-- about content -->
                 </div>
 
-                <h3>2. Benefits of Routine Calibration:</h3>
-                <div class="px-4">
-                    <p class="services-p">Routine calibration offers a multitude of advantages that positively impact
-                        efficiency,
-                        cost-effectiveness, and equipment longevity.</p>
+                <div class="col-lg-6">
+                    <div class="about_image text-center">
+                        <img src="./assets/images/logo-in-lisecse.svg" class="mx-auto" width="350" height="400"
+                            alt="about image">
 
-                    <h4> Consistency</h4>
-                    <p class="services-p">Consistently calibrated instruments lead to uniform and predictable results.
-                        Processes become
-                        smoother, and variations are minimized, translating into enhanced productivity.</p>
+                        <!-- <div class="experiance d-flex justify-content-center align-items-center text-center wow fadeInUpBig"
+                            data-wow-duration="2s" data-wow-delay="0.2s">
+                            <div class="experiance_wrapper text-center">
+                                <span>6</span>
+                                <p>Years of Experiance</p>
+                            </div>
+                        </div> -->
 
-                    <h4>Cost-Efficiency</h4>
-                    <p class="services-p">Accurate measurements directly translate to reduced wastage and rework. By
-                        preventing errors,
-                        calibration minimizes unnecessary expenditures and optimizes resource utilization.</p>
-
-                    <h4> Reliability</h4>
-                    <p class="services-p">Calibrated equipment is more reliable and less prone to unexpected breakdowns.
-                        The assurance of
-                        accurate performance increases operational reliability and minimizes disruptions.</p>
-
-                    <h4> Longevity</h4>
-                    <p class="services-p">Regular calibration contributes to the extended lifespan of equipment. By
-                        maintaining optimal
-                        functionality, it reduces wear and tear, ultimately leading to long-term cost savings.</p>
+                        <!-- <div class="about_shape">
+                            <img src="./assets/images/shape-1.svg" alt="shape">
+                        </div> -->
+                        <!-- about shape -->
+                    </div>
+                    <!-- about image -->
                 </div>
-                <h3>3. The Role of Inspection:</h3>
-                <div class="px-4">
-                    <p class="services-p">Inspection serves as a proactive measure to ensure equipment health, preempt
-                        potential issues, and
-                        maintain operational continuity.</p>
-
-                    <h4> Early Detection of Issues</h4>
-                    <p class="services-p">Regular inspections identify problems at their nascent stages, preventing them
-                        from escalating into
-                        major disruptions. This minimizes downtime and ensures uninterrupted operations.</p>
-
-                    <h4> Preventive Maintenance</h4>
-                    <p class="services-p">Inspections facilitate timely maintenance and servicing. By addressing
-                        concerns before they lead to
-                        failures, preventive maintenance optimizes the performance and longevity of equipment.</p>
-
-                    <h4> Validating Performance</h4>
-                    <p class="services-p">Inspection verifies whether equipment meets expected performance benchmarks.
-                        It ensures that
-                        machinery operates within specified parameters, enhancing overall efficiency.</p>
-
-                    <h4> Data-Driven Decision Making</h4>
-                    <p class="services-p" class="services-p">Inspection reports provide actionable insights for informed
-                        decision-making. By highlighting
-                        equipment conditions, these reports guide choices regarding repairs, replacements, and upgrades.
-                    </p>
-
-                    <p>The regular practice of calibration and inspection is integral to maintaining operational
-                        excellence,
-                        ensuring safety, and meeting industry standards. At [Your Company Name], we offer comprehensive
-                        calibration and inspection services that guarantee precision, reliability, and compliance. Trust
-                        in
-                        our expertise to elevate your business to new heights of accuracy and performance.</p>
-
-
-                </div>
-
-
-                <h3>Conclusion:</h3>
-                <div class="px-4">
-                <p class="services-p">In a world driven by precision and excellence, regular calibration and inspection
-                    are non-negotiable. They form the cornerstone of quality, safety, and compliance across industries.
-                    By investing in these practices, organisations ensure not only accurate measurements but also the
-                    trust of their customers and stakeholders.</p>
-                </div>
-                <h3>Contact Us:</h3>
-                <div class="px-4">
-                <p class="services-p">For comprehensive calibration and inspection services that elevate your standards,
-                    trust in IndTech Calibration & Inspection Services (Pvt.) Ltd. Experience excellence in precision.
-
-                    Remember, reliable measurements are more than just numbers – they're a testament to your commitment
-                    to quality.</p></div>
-
-                <!-- <h3>Unveiling Force and Torque Mastery</h3>
-                <p class="services-p">At IndTech Calibration & Inspection Services (Pvt.) Ltd, our venture into "Force and Torque" measurements unveils a realm where precision reigns supreme. With an unwavering commitment, a team of skilled professionals, and cutting-edge equipment, we redefine the standards of accurate force and torque measurement.</p>
-                <h3>Catalysing Your Force and Torque Excellence</h3>
-                <p class="services-p">As pioneers in "Force and Torque" measurement solutions, IndTech Calibration & Inspection Services (Pvt.) Ltd stands ready to catalyse your force and torque excellence. Let us be the driving force that amplifies the accuracy and reliability of every measurement.
-                    
-                </p> -->
-
-
 
             </div>
+            <!-- row -->
+        </div>
+        <!-- container -->
+    </section>
+
+
+    <section class="certificate-area">
+        <div class="container mx-auto">
+            <div class="text-center" style="margin: 3rem;">
+                <p style="font-size: 1.4rem; line-height: 2.2rem;  margin: auto;">IndTech Calibration & Inspection
+                    Services (Pvt.) Ltd proud to hold memberships with the following organizations</p>
+                <div class="section_title ">
+                    <!-- <h4 class="sub_title"> Why IndTech Calibration & Inspection Services (Pvt.) Ltd </h4> -->
+                    <div class=" wow fadeInUpBig" data-wow-duration="2s" data-wow-delay="0.2s">
+                        <h3 style="font-size: 2.5rem;" class="title m-4">FBR</h3>
+                        <p style="font-size: 1.2rem;" class="pb-1">(Federal Board of Revenue, Government of Pakistan)</p>
+                        <img src="./assets/images/ntn.jpg" class="m-auto shadow-lg" style="width: 70%;" alt="">
+                    </div>
+
+                    <div class=" wow fadeInUpBig" data-wow-duration="2s" data-wow-delay="0.2s">
+                        <h3 style="font-size: 2.5rem;" class="title m-4  ">SECP</h3>
+                        <p style="font-size: 1.2rem;" class="pb-1">(Securities & Exchange Commission of Pakistan)</p>
+                        <img src="./assets/images/Incorporation Certificate.jpg" class="m-auto  shadow-lg"
+                            style="width: 70%;" alt="">
+                    </div>
+                </div>
+            </div>
+
         </div>
     </section>
+
+    <!-- certification ends starts their  -->
+
+
+
 
 
     <!--====== FOOTER START ======-->
@@ -313,7 +272,7 @@
                                     <li><a href="index.html">Home</a></li>
                                     <li><a href="index.html#about">Why us</a></li>
                                     <li><a href="services.html">Service</a></li>
-<a href="license.html">License</a>                                    <!-- <li><a href="#">Case Study</a></li> -->
+                                    <a href="license.html">License</a> <!-- <li><a href="#">Case Study</a></li> -->
                                     <li><a href="index.html#blog">Blog</a></li>
                                 </ul>
                             </div>
