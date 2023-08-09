@@ -44,7 +44,39 @@
     <link rel="stylesheet" href="assets/css/services.css">
 
 
+<!-- <style>
+.submenu {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    list-style-type: none;
+    padding: 0;
+}
 
+.submenu li {
+    padding: 8px;
+}
+
+.nav-item.with-submenu:hover .submenu {
+    display: block;
+}
+@media (max-width: 768px) {
+    .services-link {
+        display: flex;
+        align-items: center;
+        z-index: 4;
+    }
+    
+    .services-link i {
+        margin-left: 100%;
+    }
+
+    .nav-item {
+        position: relative !important;
+    }
+}
+</style> -->
 
 </head>
 
@@ -94,40 +126,28 @@
 
                             <div class="collapse navbar-collapse sub-menu-bar" id="navbarSupportedContent">
                                 <ul id="nav" class="navbar-nav ml-auto">
-                                    <li class="nav-item active">
-                                        <a class="page-scroll" href="index.html">Home</a>
+                                    <li class="nav-item">
+                                        <a   href="index.html">Home</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="page-scroll" href="index.html#about">Why us</a>
+                                        <a  href="index.html#about">Why us</a>
                                     </li>
-                                    <li class="nav-item">
-                                        <a class="page-scroll" href="services.html">Services</a>
-                                        <ul class="dropdown-menu">
-                                            <li class="main-heading">Main Heading 1</li>
-                                            <li><a href="#item1">Item 1</a></li>
-                                            <li><a href="#item2">Item 2</a></li>
-                                            <li><a href="#item3">Item 3</a></li>
-                                            <li><a href="#item4">Item 4</a></li>
-                                            <li><a href="#item5">Item 5</a></li>
-                                            <li><a href="#item6">Item 6</a></li>
-                                            <li class="main-heading">Main Heading 2</li>
-                                            <li><a href="#item7">Item 7</a></li>
-                                            <li><a href="#item8">Item 8</a></li>
-                                            <li><a href="#item9">Item 9</a></li>
-                                            <!-- Add more items here -->
-                                          </ul>
+                                    
+                                    <li class="nav-item active with-submenu">
+                                        <a  href="services.html" class="services-link">Services <i class="bi bi-chevron-down" style="font-weight: bolder; font-size: .9rem;"></i></a>
+                                        <!-- <ul class="submenu">
+                                            <li><a href="service1.html">Service 1</a></li>
+                                            <li><a href="service2.html">Service 2</a></li>
+                                            <li><a href="service3.html">Service 3</a></li>
+                                        </ul> -->
                                     </li>
-                                    <!-- <li class="nav-item">
-                                        <a class="page-scroll" href="#case">Cases</a>
-                                    </li> -->
-                                    <!-- <li class="nav-item">
-                                        <a class="page-scroll" href="#growth">Growth</a>
-                                    </li> -->
+                                
+                                    
                                     <li class="nav-item">
                                         <a href="license.html">License</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="page-scroll" href="index.html#blog">Blog</a>
+                                        <a   href="index.html#blog">Blog</a>
                                     </li>
                                 </ul>
                             </div>

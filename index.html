@@ -10,7 +10,7 @@
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css" integrity="sha512-QKC1UZ/ZHNgFzVKSAhV5v5j73eeL9EEN289eKAEFaAjgAiobVAnVv/AGuPbXsKl1dNoel3kNr6PYnSiTzVVBCw==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
     <!-- <link href="https://cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet"> -->
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css" /> -->
-    
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 
     <meta name="description" content="">
@@ -41,8 +41,45 @@
     <link rel="stylesheet" href="assets/css/style.css">
 
     <style>
+        .submenu {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            list-style-type: none;
+            padding: 0;
+            z-index: 1;
+            /* Ensure the submenu appears above other content */
+        }
 
-   
+        .submenu li {
+            padding: 8px;
+        }
+
+        /* Show the submenu when hovering over the "Services" link */
+        .nav-item.with-submenu:hover .submenu {
+            display: block;
+        }
+
+        /* Adjust spacing between the icon and text on small screens */
+        @media (max-width: 768px) {
+            .services-link {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                /* Add this line to evenly space the text and icon */
+            }
+
+            .services-link i {
+                margin-left: 0 !important;
+                /* Remove margin-left to prevent unnecessary spacing */
+            }
+
+            /* Ensure other nav links don't get overridden */
+            .nav-item {
+                position: relative;
+            }
+        }
     </style>
 
 </head>
@@ -86,15 +123,18 @@
                             <a class="navbar-brand" href="index.html">
                                 <img src="./assets/images/logo-nav.png" style="width: 120px; height: 87px;" alt="Logo">
 
-                               
+
                                 <!-- <h3 class="logo-heading">  <span style="color: #082548 ;"> IndTech </span> Calibration & Inspection Services (Pvt.) Ltd  </h3> -->
                             </a>
 
                             <div class="header-banner-image">
-                                <img src="./assets/images/header-banner-image.png" style="width: 31rem;" class="d-none d-md-block" alt="">
-                             </div>
+                                <img src="./assets/images/header-banner-image.png" style="width: 31rem;"
+                                    class="d-none d-md-block" alt="">
+                            </div>
 
-                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <button class="navbar-toggler" type="button" data-toggle="collapse"
+                                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                aria-expanded="false" aria-label="Toggle navigation">
                                 <span class="toggler-icon"></span>
                                 <span class="toggler-icon"></span>
                                 <span class="toggler-icon"></span>
@@ -108,8 +148,19 @@
                                     <li class="nav-item">
                                         <a class="page-scroll" href="#about">Why us</a>
                                     </li>
-                                    <li class="nav-item">
+                                    <!-- <li class="nav-item">
                                         <a href="services.html">Services</a>
+                                    </li> -->
+
+                                    <li class="nav-item with-submenu">
+                                        <a href="services.html" class="services-link">
+                                            Services <i class="bi bi-chevron-down"></i>
+                                        </a>
+                                        <ul class="submenu">
+                                            <li><a href="service1.html">Service 1</a></li>
+                                            <li><a href="service2.html">Service 2</a></li>
+                                            <li><a href="service3.html">Service 3</a></li>
+                                        </ul>
                                     </li>
                                     <!-- <li class="nav-item">
                                         <a class="page-scroll" href="#case">Cases</a>
@@ -144,13 +195,19 @@
             <div class="container-fluid">
                 <div class="slider-active">
 
-                    <div class="single_slider bg_cover d-flex align-items-center" style="background-image: url(assets/images/slider-4.jpg)">
+                    <div class="single_slider bg_cover d-flex align-items-center"
+                        style="background-image: url(assets/images/slider-4.jpg)">
                         <div class="container">
                             <div class="row">
                                 <div class="col-lg-7">
                                     <div class="slider_content">
-                                        <h2 class="slider_title" data-animation="fadeInUp" data-delay="0.2s">IndTech Calibration & Inspection Services (Pvt.) Ltd</h2>
-                                        <p data-animation="fadeInUp" data-delay="0.6s">IndTech Calibration & Inspection Services (Pvt.) Ltd is a leading provider of calibration and inspection solutions. With a team of skilled professionals and state-of-the-art equipment, we ensure precision and accuracy in measurement, catering to diverse industries with excellence.</p>
+                                        <h2 class="slider_title" data-animation="fadeInUp" data-delay="0.2s">IndTech
+                                            Calibration & Inspection Services (Pvt.) Ltd</h2>
+                                        <p data-animation="fadeInUp" data-delay="0.6s">IndTech Calibration & Inspection
+                                            Services (Pvt.) Ltd is a leading provider of calibration and inspection
+                                            solutions. With a team of skilled professionals and state-of-the-art
+                                            equipment, we ensure precision and accuracy in measurement, catering to
+                                            diverse industries with excellence.</p>
                                         <!-- <a class="main-btn" href="#" data-animation="fadeInUp" data-delay="1s">Learn More</a> -->
                                     </div>
                                     <!-- slider content -->
@@ -162,13 +219,19 @@
                     </div>
                     <!-- single slider -->
 
-                    <div class="single_slider bg_cover d-flex align-items-center" style="background-image: url(assets/images/slider-1.jpg)">
+                    <div class="single_slider bg_cover d-flex align-items-center"
+                        style="background-image: url(assets/images/slider-1.jpg)">
                         <div class="container">
                             <div class="row">
                                 <div class="col-lg-7">
                                     <div class="slider_content">
-                                        <h2 class="slider_title" data-animation="fadeInUp" data-delay="0.2s">IndTech Calibration Services</h2>
-                                        <p data-animation="fadeInUp" data-delay="0.6s">Our calibration equipment is verifiably linked to the most recent International Standards. We examine diverse facilities, products, and services, ensuring unbiased outcomes, assisting clients in fulfilling contractual commitments with their own clients or suppliers.</p>
+                                        <h2 class="slider_title" data-animation="fadeInUp" data-delay="0.2s">IndTech
+                                            Calibration Services</h2>
+                                        <p data-animation="fadeInUp" data-delay="0.6s">Our calibration equipment is
+                                            verifiably linked to the most recent International Standards. We examine
+                                            diverse facilities, products, and services, ensuring unbiased outcomes,
+                                            assisting clients in fulfilling contractual commitments with their own
+                                            clients or suppliers.</p>
                                         <!-- <a class="main-btn" href="#" data-animation="fadeInUp" data-delay="1s">Learn More</a> -->
                                     </div>
                                     <!-- slider content -->
@@ -180,13 +243,19 @@
                     </div>
                     <!-- single slider -->
 
-                    <div class="single_slider bg_cover d-flex align-items-center" style="background-image: url(assets/images/slider-2.jpg)">
+                    <div class="single_slider bg_cover d-flex align-items-center"
+                        style="background-image: url(assets/images/slider-2.jpg)">
                         <div class="container">
                             <div class="row">
                                 <div class="col-lg-7">
                                     <div class="slider_content">
-                                        <h2 class="slider_title" data-animation="fadeInUp" data-delay="0.2s">IndTech Inspection Services</h2>
-                                        <p data-animation="fadeInUp" data-delay="0.6s">ICS inspection services enable clients to assess adherence to relevant standards, be they regulatory or voluntary, for products, processes, and services. We inspect diverse facilities, ensuring objective, impartial results, and supporting clients in fulfilling contractual obligations with their customers or suppliers.</p>
+                                        <h2 class="slider_title" data-animation="fadeInUp" data-delay="0.2s">IndTech
+                                            Inspection Services</h2>
+                                        <p data-animation="fadeInUp" data-delay="0.6s">ICS inspection services enable
+                                            clients to assess adherence to relevant standards, be they regulatory or
+                                            voluntary, for products, processes, and services. We inspect diverse
+                                            facilities, ensuring objective, impartial results, and supporting clients in
+                                            fulfilling contractual obligations with their customers or suppliers.</p>
                                         <!-- <a class="main-btn" href="#" data-animation="fadeInUp" data-delay="1s">Learn More</a> -->
                                     </div>
                                     <!-- slider content -->
@@ -198,13 +267,18 @@
                     </div>
                     <!-- single slider -->
 
-                    <div class="single_slider bg_cover d-flex align-items-center" style="background-image: url(assets/images/slider-3.jpg)">
+                    <div class="single_slider bg_cover d-flex align-items-center"
+                        style="background-image: url(assets/images/slider-3.jpg)">
                         <div class="container">
                             <div class="row">
                                 <div class="col-lg-7">
                                     <div class="slider_content">
-                                        <h2 class="slider_title" data-animation="fadeInUp" data-delay="0.2s">Why IndTech Calibration & Inspection Services (Pvt.) Ltd</h2>
-                                        <p data-animation="fadeInUp" data-delay="0.6s">IndTech Calibration & Inspection Services (Pvt.) Ltd remarkable achievements in major projects inspire trust. Clients count on our calibration and inspection expertise, delivering reliable results consistently.</p>
+                                        <h2 class="slider_title" data-animation="fadeInUp" data-delay="0.2s">Why IndTech
+                                            Calibration & Inspection Services (Pvt.) Ltd</h2>
+                                        <p data-animation="fadeInUp" data-delay="0.6s">IndTech Calibration & Inspection
+                                            Services (Pvt.) Ltd remarkable achievements in major projects inspire trust.
+                                            Clients count on our calibration and inspection expertise, delivering
+                                            reliable results consistently.</p>
                                         <!-- <a class="main-btn" href="#" data-animation="fadeInUp" data-delay="1s">Learn More</a> -->
                                     </div>
                                     <!-- slider content -->
@@ -253,7 +327,7 @@
 
     <!--====== BRAND PART ENDS ======-->
 
-   
+
 
     <!--====== ABOUT PART START ======-->
 
@@ -263,7 +337,8 @@
                 <div class="col-lg-7">
                     <div class="about_image mt-50">
                         <img src="./assets/images/about.jpg" alt="about image">
-                        <div class="experiance d-flex justify-content-center align-items-center text-center wow fadeInUpBig" data-wow-duration="2s" data-wow-delay="0.2s">
+                        <div class="experiance d-flex justify-content-center align-items-center text-center wow fadeInUpBig"
+                            data-wow-duration="2s" data-wow-delay="0.2s">
                             <div class="experiance_wrapper text-center">
                                 <span>6</span>
                                 <p>Years of Experiance</p>
@@ -280,10 +355,15 @@
                     <div class="about_content mt-45">
                         <div class="section_title">
                             <h4 class="sub_title"> Why IndTech Calibration & Inspection Services (Pvt.) Ltd </h4>
-                            <h3 class="title">IndTech Calibration & Inspection Services (Pvt.) Ltd is Trusted by 817+ Businesses in Pakistan.</h3>
+                            <h3 class="title">IndTech Calibration & Inspection Services (Pvt.) Ltd is Trusted by 817+
+                                Businesses in Pakistan.</h3>
                         </div>
                         <!-- section title -->
-                        <p>IndTech Calibration & Inspection Services (Pvt.) Ltd stands out as the top choice for calibration and inspection services. With a proven track record of expertise, reliability, and excellence, clients trust us to deliver exceptional results, ensuring precision and compliance for their critical operations. Our dedication to quality and customer satisfaction sets us apart in the industry.</p>
+                        <p>IndTech Calibration & Inspection Services (Pvt.) Ltd stands out as the top choice for
+                            calibration and inspection services. With a proven track record of expertise, reliability,
+                            and excellence, clients trust us to deliver exceptional results, ensuring precision and
+                            compliance for their critical operations. Our dedication to quality and customer
+                            satisfaction sets us apart in the industry.</p>
 
                         <div class="about_skills pt-15">
                             <div class="skill_item mt-20">
@@ -356,15 +436,16 @@
 
     <!--====== ABOUT PART ENDS ======-->
 
-     <!--====== FEATURES PART START ======-->
+    <!--====== FEATURES PART START ======-->
 
-     <section id="why" class="features_area pt-100 pb-100 blue-bg">
+    <section id="why" class="features_area pt-100 pb-100 blue-bg">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-7">
                     <div class="section_title text-center pb-10">
                         <h4 class="sub_title">Why Choose Us?</h4>
-                        <h3 class="title">We Provide Professional Calibration <br> and Inspection Services For Business</h3>
+                        <h3 class="title">We Provide Professional Calibration <br> and Inspection Services For Business
+                        </h3>
                     </div>
                     <!-- section title -->
                 </div>
@@ -372,49 +453,57 @@
             <!-- row -->
             <div class="row">
                 <div class="col-lg-3 col-sm-6">
-                    <div class="single_features text-center mt-25 wow fadeInUpBig" data-wow-duration="2s" data-wow-delay="0.2s">
+                    <div class="single_features text-center mt-25 wow fadeInUpBig" data-wow-duration="2s"
+                        data-wow-delay="0.2s">
                         <div class="features_icon">
                             <i class="bi bi-patch-check"></i>
                         </div>
                         <div class="features_content">
                             <h4 class="features_title"><a href="#">Certified</a></h4>
-                            <p>IndTech Calibration & Inspection Services (Pvt.) Ltd is a certified expert, ensuring reliable calibration and inspection services.</p>
+                            <p>IndTech Calibration & Inspection Services (Pvt.) Ltd is a certified expert, ensuring
+                                reliable calibration and inspection services.</p>
                         </div>
                     </div>
                     <!-- single features -->
                 </div>
                 <div class="col-lg-3 col-sm-6">
-                    <div class="single_features text-center mt-25 wow fadeInUpBig" data-wow-duration="2s" data-wow-delay="0.5s">
+                    <div class="single_features text-center mt-25 wow fadeInUpBig" data-wow-duration="2s"
+                        data-wow-delay="0.5s">
                         <div class="features_icon">
                             <i class="bi bi-rocket-takeoff"></i>
                         </div>
                         <div class="features_content">
                             <h4 class="features_title"><a href="#">Fast</a></h4>
-                            <p>With extensive experience, IndTech Calibration & Inspection Services (Pvt.) Ltd delivers precision and excellence in every project.</p>
+                            <p>With extensive experience, IndTech Calibration & Inspection Services (Pvt.) Ltd delivers
+                                precision and excellence in every project.</p>
                         </div>
                     </div>
                     <!-- single features -->
                 </div>
                 <div class="col-lg-3 col-sm-6">
-                    <div class="single_features text-center mt-25 wow fadeInUpBig" data-wow-duration="2s" data-wow-delay="0.8s">
+                    <div class="single_features text-center mt-25 wow fadeInUpBig" data-wow-duration="2s"
+                        data-wow-delay="0.8s">
                         <div class="features_icon">
                             <i class="bi bi-briefcase"></i>
                         </div>
                         <div class="features_content">
                             <h4 class="features_title"><a href="#">Experienced</a></h4>
-                            <p>Count on IndTech Calibration & Inspection Services (Pvt.) Ltd for fast and efficient calibration and inspection solutions. </p>
+                            <p>Count on IndTech Calibration & Inspection Services (Pvt.) Ltd for fast and efficient
+                                calibration and inspection solutions. </p>
                         </div>
                     </div>
                     <!-- single features -->
                 </div>
                 <div class="col-lg-3 col-sm-6">
-                    <div class="single_features text-center mt-25 wow fadeInUpBig" data-wow-duration="2s" data-wow-delay="1.1s">
+                    <div class="single_features text-center mt-25 wow fadeInUpBig" data-wow-duration="2s"
+                        data-wow-delay="1.1s">
                         <div class="features_icon">
                             <i class="bi bi-headset"></i>
                         </div>
                         <div class="features_content">
                             <h4 class="features_title"><a href="#">Dedicated</a></h4>
-                            <p>Our dedicated team ensures unparalleled commitment to customer satisfaction and IndTech Calibration & Inspection Services (Pvt.) Ltd standards.</p>
+                            <p>Our dedicated team ensures unparalleled commitment to customer satisfaction and IndTech
+                                Calibration & Inspection Services (Pvt.) Ltd standards.</p>
                         </div>
                     </div>
                     <!-- single features -->
@@ -517,7 +606,7 @@
         </div>
     </section> -->
 
-   
+
 
     <!--====== SERVICES PART ENDS ======-->
 
@@ -619,7 +708,9 @@
             <div class="row justify-content-center">
                 <div class="col-lg-8">
                     <div class="section_title text-center pb-15">
-                        <h3 style="font-size: 1.5rem !important;"> <span style="font-size: 1.5rem !important;" class="sub_title">Founder</span>  of IndTech Calibration & Inspection Services (Pvt.) Ltd</h3>
+                        <h3 style="font-size: 1.5rem !important;"> <span style="font-size: 1.5rem !important;"
+                                class="sub_title">Founder</span> of IndTech Calibration & Inspection Services (Pvt.) Ltd
+                        </h3>
                         <!-- <h3 class="title">Meet Our <br>Committed Team Members</h3> -->
                     </div>
                     <!-- section title -->
@@ -628,7 +719,8 @@
             <!-- row -->
             <div class="row align-items-center">
                 <div class="col-lg-4 col-sm-12">
-                    <div class="single_team text-center mt-30 wow fadeInUpBig" data-wow-duration="2s" data-wow-delay="0.2s">
+                    <div class="single_team text-center mt-30 wow fadeInUpBig" data-wow-duration="2s"
+                        data-wow-delay="0.2s">
                         <div class="team_image">
                             <img src="./assets/images/team-1.jpg" alt="team">
                             <!-- <ul class="social">
@@ -638,7 +730,7 @@
                                 <li><a href="#"><i class="bi bi-linkedin"></i></a></li>
                             </ul> -->
                         </div>
-                       
+
                     </div>
                     <!-- single team -->
                 </div>
@@ -666,7 +758,9 @@
                             <p style="font-size: 1.2rem;">Senior Engeenier</p>
                         </div>
                         <p class="my-3">
-                            ""IndTech Calibration & Inspection Services (Pvt.) Ltd stands as the epitome of precision and innovation. Our unwavering commitment to meticulous calibration and inspection sets new industry benchmarks, ensuring accuracy and excellence in every measurement.""
+                            ""IndTech Calibration & Inspection Services (Pvt.) Ltd stands as the epitome of precision
+                            and innovation. Our unwavering commitment to meticulous calibration and inspection sets new
+                            industry benchmarks, ensuring accuracy and excellence in every measurement.""
                         </p>
                     </div>
 
@@ -721,7 +815,8 @@
                 <div class="col-lg-8">
                     <div class="section_title text-center pb-15">
                         <h4 class="sub_title">Testimonials</h4>
-                        <h3 class="title">What Our Clients<br> Says About IndTech Calibration & Inspection Services (Pvt.) Ltd</h3>
+                        <h3 class="title">What Our Clients<br> Says About IndTech Calibration & Inspection Services
+                            (Pvt.) Ltd</h3>
                     </div>
                     <!-- section title -->
                 </div>
@@ -740,7 +835,9 @@
                                 <span class="sub_title">Founder of @Mozesto</span>
                             </div>
                             <p>
-                                "IndTech Calibration & Inspection Services (Pvt.) Ltd exceeded our expectations. Their meticulous attention to detail and quick turnaround time made them an invaluable partner for our quality assurance needs. Highly recommended!"
+                                "IndTech Calibration & Inspection Services (Pvt.) Ltd exceeded our expectations. Their
+                                meticulous attention to detail and quick turnaround time made them an invaluable partner
+                                for our quality assurance needs. Highly recommended!"
                             </p>
                         </div>
                     </div>
@@ -757,7 +854,9 @@
                                 <h5 class="name">Ali Haider</h5>
                                 <span class="sub_title">Startup Founder</span>
                             </div>
-                            <p>"We've been relying on IndTech Calibration & Inspection Services (Pvt.) Ltd for years. Their experienced team consistently delivers accurate results, ensuring our compliance with industry standards. Trustworthy, professional, and efficient."</p>
+                            <p>"We've been relying on IndTech Calibration & Inspection Services (Pvt.) Ltd for years.
+                                Their experienced team consistently delivers accurate results, ensuring our compliance
+                                with industry standards. Trustworthy, professional, and efficient."</p>
                         </div>
                     </div>
                     <!-- single testimonial -->
@@ -773,7 +872,10 @@
                                 <h5 class="name">Muhammad Hanzla</h5>
                                 <span class="sub_title">Frontend Developer</span>
                             </div>
-                            <p>"IndTech Calibration & Inspection Services (Pvt.) Ltd dedication to precision and expertise is commendable. Their thorough inspection services gave us peace of mind, knowing our facilities and products meet the highest standards. A reliable and trusted partner."</p>
+                            <p>"IndTech Calibration & Inspection Services (Pvt.) Ltd dedication to precision and
+                                expertise is commendable. Their thorough inspection services gave us peace of mind,
+                                knowing our facilities and products meet the highest standards. A reliable and trusted
+                                partner."</p>
                         </div>
                     </div>
                     <!-- single testimonial -->
@@ -808,7 +910,9 @@
                         </div>
                         <div class="blog_content">
                             <h4 class="blog_title"><a href="blog-1.html">The Importance of Regular Calibration</a></h4>
-                            <p>Calibration is a critical process that ensures the accuracy and reliability of various instruments, equipment, and systems. From laboratory instruments to industrial machinery and ... </p>
+                            <p>Calibration is a critical process that ensures the accuracy and reliability of various
+                                instruments, equipment, and systems. From laboratory instruments to industrial machinery
+                                and ... </p>
                             <a class="more" href="blog-1.html">Read More <i class="bi bi-chevron-right"></i></a>
                         </div>
                     </div>
@@ -820,8 +924,11 @@
                             <img src="./assets/images/blog-2.jpg" alt="blog">
                         </div>
                         <div class="blog_content">
-                            <h4 class="blog_title"><a href="blog-2.html">Top 5 Common Inspection Errors and How to Avoid Them</a></h4>
-                            <p>Inspections play a vital role in ensuring quality, safety, and compliance in various industries. However, even the most experienced professionals can make mistakes during ... </p>
+                            <h4 class="blog_title"><a href="blog-2.html">Top 5 Common Inspection Errors and How to Avoid
+                                    Them</a></h4>
+                            <p>Inspections play a vital role in ensuring quality, safety, and compliance in various
+                                industries. However, even the most experienced professionals can make mistakes during
+                                ... </p>
                             <a class="more" href="blog-2.html">Read More <i class="bi bi-chevron-right"></i></a>
                         </div>
                     </div>
@@ -846,7 +953,8 @@
                             <a href="index.html">
                                 <img src="./assets/images/logo.png" alt="">
                             </a>
-                            <p>Stay connected and up-to-date with the latest news, posts, and insights on IndTech Calibration & Inspection Services (Pvt.) Ltd. Follow us on social media for more.</p>
+                            <p>Stay connected and up-to-date with the latest news, posts, and insights on IndTech
+                                Calibration & Inspection Services (Pvt.) Ltd. Follow us on social media for more.</p>
                             <ul class="social">
                                 <li><a href="#"><i class="bi bi-facebook"></i></a></li>
                                 <li><a href="#"><i class="bi bi-twitter"></i></a></li>
@@ -870,13 +978,16 @@
                                 </ul>
                             </div>
                             <!-- footer link -->
-                            <div class="footer_link footer_link-2 mt-45" >
-                                <h4 class="footer_title" >Contact</h4>
+                            <div class="footer_link footer_link-2 mt-45">
+                                <h4 class="footer_title">Contact</h4>
                                 <ul class="link">
                                     <li><a href="mailto:hassan64061115@gmail.com">Info@indtechicis@gmail.com</a></li>
                                     <li><a href="tel:+92 326 5271196">Click to Call: +92 326 5271196</a></li>
                                     <li>House # 18 block B-III Johar Town Lahore</li>
-                                    <li><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3403.378106969122!2d74.2984544!3d31.458783500000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3919015aeafa2251%3A0x37c4f5aac923f02a!2s18%2C%20Block%20B3%20Block%20B%203%20Phase%201%20Johar%20Town%2C%20Lahore%2C%20Punjab%2054600!5e0!3m2!1sen!2s!4v1691179804922!5m2!1sen!2s" width="235" height="250" style="border:0;" allowfullscreen="" class="google-map-address" loading="lazy"></iframe></li>
+                                    <li><iframe
+                                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3403.378106969122!2d74.2984544!3d31.458783500000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3919015aeafa2251%3A0x37c4f5aac923f02a!2s18%2C%20Block%20B3%20Block%20B%203%20Phase%201%20Johar%20Town%2C%20Lahore%2C%20Punjab%2054600!5e0!3m2!1sen!2s!4v1691179804922!5m2!1sen!2s"
+                                            width="235" height="250" style="border:0;" allowfullscreen=""
+                                            class="google-map-address" loading="lazy"></iframe></li>
                                 </ul>
                             </div>
                             <!-- footer link -->
@@ -912,7 +1023,8 @@
                 <!-- row -->
             </div>
             <!-- footer wrapper -->
-            <p class="text-center pb-30">Designed and Developed by <a href="https://hanzla-webdev.netlify.app" rel="nofollow">Hanzla-WebDev</a> </p>
+            <p class="text-center pb-30">Designed and Developed by <a href="https://hanzla-webdev.netlify.app"
+                    rel="nofollow">Hanzla-WebDev</a> </p>
         </div>
         <!-- container -->
     </footer>
