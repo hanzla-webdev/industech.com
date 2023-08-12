@@ -2201,3 +2201,10 @@ p {
 
 
 
+.quality-policy li  {
+    margin: .7rem;
+}
+
+.quality-policy li  h6{
+    display: inline;    
+}
