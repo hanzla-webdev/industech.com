@@ -2203,6 +2203,7 @@ p {
 
 .quality-policy li  {
     margin: .7rem;
+    text-align: justify;
 }
 
 .quality-policy li  h6{
