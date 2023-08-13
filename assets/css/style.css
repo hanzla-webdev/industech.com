@@ -2209,3 +2209,17 @@ p {
 .quality-policy li  h6{
     display: inline;    
 }
+
+.open-position {
+    background-color: rgb(219, 49, 49);
+    
+    width: 95%;
+    margin: 1rem;
+    text-align: center;
+    border-radius: 4px;
+    padding: .6rem;
+}
+
+.open-position h4 {
+    color: #fff !important;
+}
