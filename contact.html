@@ -43,7 +43,7 @@
 
     <link rel="stylesheet" href="assets/css/services.css">
 
-
+    <link rel="stylesheet" href="./assets/php/mail.php">
 
 
 </head>
@@ -155,17 +155,17 @@
         <div class="col-lg-10 mx-auto " style="margin-top: 5rem;">
             <div class="footer_form mt-45">
                 <h2 class="footer_title get-in-touch">Get in Touch</h2>
-                <form id="contact-form" action="assets/contact.php">
+                <form id="contact-form" method="post" action="mail.php">
                     <div class="single_form">
-                        <input type="text" placeholder="Name" name="Name">
+                        <input type="text" id="Name" placeholder="name" name="Name">
                     </div>
                     <!-- single form -->
                     <div class="single_form">
-                        <input type="text" placeholder="Email" name="email">
+                        <input type="text" placeholder="Email" id="email" name="email">
                     </div>
                     <!-- single form -->
                     <div class="single_form">
-                        <textarea placeholder="Message" name="message"></textarea>
+                        <textarea placeholder="Message" id="message" name="message"></textarea>
                     </div>
                     <!-- single form -->
                     <p class="form-message"></p>
@@ -180,9 +180,6 @@
     </div>
    </div>
     <!-- Main contact Form  Ends Here-->
-
-
-
 
 
 
@@ -303,6 +300,9 @@
 
     <!--====== Main js ======-->
     <script src="assets/js/main.js"></script>
+
+    <!-- js contact link -->
+    <script src="./assets/js/contact.js"></script>
 
 </body>
 
