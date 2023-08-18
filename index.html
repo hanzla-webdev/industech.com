@@ -39,6 +39,148 @@
 
     <!--====== Style CSS ======-->
     <link rel="stylesheet" href="assets/css/style.css">
+    
+
+    <style>
+  
+        .sec-center {
+          position: relative;
+          max-width: 100%;
+          /* text-align: center; */
+          z-index: 200;
+        }
+        [type="checkbox"]:checked,
+        [type="checkbox"]:not(:checked){
+          position: absolute;
+          left: -9999px;
+          opacity: 0;
+          pointer-events: none;
+        }
+        
+        .dropdown:checked + label:before{
+          pointer-events: auto;
+        }
+        .dropdown:not(:checked) + label .si {
+          font-size: 24px;
+          transition: transform 200ms linear;
+        }
+        .dropdown:checked + label .si {
+          transform: rotate(180deg);
+          font-size: 24px;
+          margin-left: 10px;
+          transition: transform 200ms linear;
+        }
+        .section-dropdown {
+          position: absolute;
+          padding: 5px;
+          background-color: #082548;
+          top: 70px;
+          left: 0;
+          width: 100%;
+          border-radius: 4px;
+          display: block;
+          box-shadow: 0 14px 35px 0 rgba(9,9,12,0.4);
+          z-index: 2;
+          opacity: 0;
+          pointer-events: none;
+          transform: translateY(20px);
+          transition: all 200ms linear;
+        }
+        .section-dropdown a {
+            color: #fff !important;
+        }
+        .dark-light:checked ~ .sec-center .section-dropdown {
+          background-color: #fff;
+          box-shadow: 0 14px 35px 0 rgba(9,9,12,0.15);
+        }
+        .dropdown:checked ~ .section-dropdown{
+          opacity: 1;
+          pointer-events: auto;
+          width: 140%;
+          transform: translateY(0);
+        }
+        .section-dropdown:before {
+          position: absolute;
+          top: -20px;
+          left: 0;
+          width: 100%;
+          height: 20px;
+          content: '';
+          display: block;
+          z-index: 1;
+        }
+        .section-dropdown:after {
+          position: absolute;
+          top: -7px;
+          left: 30px;
+          width: 0; 
+          height: 0; 
+          border-left: 8px solid transparent;
+          border-right: 8px solid transparent; 
+          border-bottom: 8px solid #111;
+          content: '';
+          display: block;
+          z-index: 2;
+          transition: all 200ms linear;
+        }
+        .dark-light:checked ~ .sec-center .section-dropdown:after {
+          border-bottom: 8px solid #fff;
+        }
+        
+        .sec-center a {
+          position: relative;
+          color: #fff ;
+          transition: all 200ms linear;
+          font-family: 'Roboto', sans-serif;
+          font-weight: 500;
+          font-size: 15px;
+          border-radius: 2px;
+          padding: 5px 0;
+          padding-left: 20px;
+          padding-right: 15px;
+          margin: 2px 0;
+          text-align: left;
+          text-decoration: none;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-align-items: center;
+          -moz-align-items: center;
+          -ms-align-items: center;
+          align-items: center;
+          justify-content: space-between;
+            -ms-flex-pack: distribute;
+        }
+        .dark-light:checked ~ .sec-center .section-dropdown a {
+          color: #102770;
+        }
+        .section-dropdown a{
+            padding: 7px 8px !important;
+        }
+        /* .sec-center a:hover {
+          color: #102770;
+          background-color: #ffeba7;
+        } */
+        .dark-light:checked ~ .sec-center .section-dropdown a:hover {
+          color: #ffeba7;
+          background-color: #102770;
+        }
+        .sec-center a .si {
+          font-size: 22px;
+        }   
+
+        @media screen and (min-width: 991px) {
+            .sec-center {
+                padding-top: 1.3rem;
+            }
+            
+         }
+         @media screen and (min-width: 991px) {
+.dropdown:not(:checked) + label .si {
+          font-size: 24px;
+          /* margin-left: 100%; */
+        }
+         }
+          </style>
 
 
 </head>
@@ -107,18 +249,34 @@
                                     <li class="nav-item">
                                         <a href="about.html">About Us</a>
                                     </li>
-                                   
-                                   
-                                    <li class="nav-item with-submenu">
-                                        <a href="services.html" class="services-link">
-                                                Services
-                                        </a>
-                                    </li>
+
+                                    <li class="nav-item sec-center"> 
+                                        <a style="display: inline;" href="services.html">Services</a>	
+                                        <input class="dropdown" type="checkbox" id="dropdown" name="dropdown"/>
+                                        <label style="display: inline; cursor: pointer;" class="for-dropdown" for="dropdown"><i class="si bi bi-arrow-down-short"></i></label>
+                                        <div class="section-dropdown"> 
+                                          <a href="#">Pressure <i class="si bi bi-arrow-right-short"></i></i></a>
+                                          <a href="#">Temprature<i class="si bi bi-arrow-right-short"></i></i></a>
+                                          <a href="#">Misellaneous<i class=" si bi bi-arrow-right-short"></i></i></a>
+                                          <a href="#">Electrical<i class=" si bi bi-arrow-right-short"></i></i></a>
+                                          <a href="#">Dimentional<i class=" si bi bi-arrow-right-short"></i></i></a>
+                                          <a href="#">Force&Torque<i class=" si bi bi-arrow-right-short"></i></i></a>
+                                          <a href="#">Lifiting Equipments<i class=" si bi bi-arrow-right-short"></i></i></a>
+                                          <a href="#">Non Destructive Testing<i class=" si bi bi-arrow-right-short"></i></i></a>
+                                          <a href="#">Electrical Testing<i class=" si bi bi-arrow-right-short"></i></i></a>
+                                        </div>
+                                      </li>
+
+                                    <!-- <li class="nav-item">
+                                        <a href="services.html" class="services-link">Services</a>
+                                    </li> -->
+
+                                    
                                     <!-- <li class="nav-item">
                                         <a class="page-scroll" href="#case">Cases</a>
                                     </li> -->
                                     <li class="nav-item">
-                                        <a  href="career.html">Career</a>
+                                        <a href="career.html">Career</a>
                                     </li>
                                     <li class="nav-item">
                                         <a href="license.html">License</a>
@@ -282,7 +440,8 @@
                     <div class="about_content mt-45">
                         <div class="section_title">
                             <h4 class="sub_title"> Why IndTech Calibration & Inspection Services (Pvt.) Ltd </h4>
-                            <h3 class="title">IndTech Calibration & Inspection Services (Pvt.) Ltd is Trusted by many Businesses in Pakistan.</h3>
+                            <h3 class="title">IndTech Calibration & Inspection Services (Pvt.) Ltd is Trusted by many
+                                Businesses in Pakistan.</h3>
                         </div>
                         <!-- section title -->
                         <p>IndTech Calibration & Inspection Services (Pvt.) Ltd stands out as the top choice for
@@ -452,7 +611,8 @@
                 <div class="col-lg-8">
                     <div class="section_title text-center pb-15">
                         <h3 style="font-size: 1.5rem !important;"> <span style="font-size: 1.5rem !important;"
-                                class="sub_title">Co-Founder</span> of IndTech Calibration & Inspection Services (Pvt.) Ltd
+                                class="sub_title">Co-Founder</span> of IndTech Calibration & Inspection Services (Pvt.)
+                            Ltd
                         </h3>
                         <!-- <h3 class="title">Meet Our <br>Committed Team Members</h3> -->
                     </div>
@@ -550,7 +710,7 @@
 
     <!--====== TEAM PART ENDS ======-->
 
-    
+
 
     <!--====== BLAG PART START ======-->
 
@@ -608,7 +768,7 @@
 
     <!--====== FOOTER PART START ======-->
 
- 
+
     <footer id="footer" class="footer_area">
         <div class="container">
             <div class="footer_wrapper pt-50 pb-100">
@@ -660,7 +820,7 @@
                         </div>
                         <!-- footer link wrapper -->
                     </div>
-                   
+
                 </div>
                 <!-- row -->
             </div>
@@ -726,6 +886,8 @@
     <!--====== Main js ======-->
     <script src="assets/js/main.js"></script>
 
+
+    
 </body>
 
 </html>
