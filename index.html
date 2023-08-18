@@ -39,148 +39,11 @@
 
     <!--====== Style CSS ======-->
     <link rel="stylesheet" href="assets/css/style.css">
-    
+
 
     <style>
-  
-        .sec-center {
-          position: relative;
-          max-width: 100%;
-          /* text-align: center; */
-          z-index: 200;
-        }
-        [type="checkbox"]:checked,
-        [type="checkbox"]:not(:checked){
-          position: absolute;
-          left: -9999px;
-          opacity: 0;
-          pointer-events: none;
-        }
         
-        .dropdown:checked + label:before{
-          pointer-events: auto;
-        }
-        .dropdown:not(:checked) + label .si {
-          font-size: 24px;
-          transition: transform 200ms linear;
-        }
-        .dropdown:checked + label .si {
-          transform: rotate(180deg);
-          font-size: 24px;
-          margin-left: 10px;
-          transition: transform 200ms linear;
-        }
-        .section-dropdown {
-          position: absolute;
-          padding: 5px;
-          background-color: #082548;
-          top: 70px;
-          left: 0;
-          width: 100%;
-          border-radius: 4px;
-          display: block;
-          box-shadow: 0 14px 35px 0 rgba(9,9,12,0.4);
-          z-index: 2;
-          opacity: 0;
-          pointer-events: none;
-          transform: translateY(20px);
-          transition: all 200ms linear;
-        }
-        .section-dropdown a {
-            color: #fff !important;
-        }
-        .dark-light:checked ~ .sec-center .section-dropdown {
-          background-color: #fff;
-          box-shadow: 0 14px 35px 0 rgba(9,9,12,0.15);
-        }
-        .dropdown:checked ~ .section-dropdown{
-          opacity: 1;
-          pointer-events: auto;
-          width: 140%;
-          transform: translateY(0);
-        }
-        .section-dropdown:before {
-          position: absolute;
-          top: -20px;
-          left: 0;
-          width: 100%;
-          height: 20px;
-          content: '';
-          display: block;
-          z-index: 1;
-        }
-        .section-dropdown:after {
-          position: absolute;
-          top: -7px;
-          left: 30px;
-          width: 0; 
-          height: 0; 
-          border-left: 8px solid transparent;
-          border-right: 8px solid transparent; 
-          border-bottom: 8px solid #111;
-          content: '';
-          display: block;
-          z-index: 2;
-          transition: all 200ms linear;
-        }
-        .dark-light:checked ~ .sec-center .section-dropdown:after {
-          border-bottom: 8px solid #fff;
-        }
-        
-        .sec-center a {
-          position: relative;
-          color: #fff ;
-          transition: all 200ms linear;
-          font-family: 'Roboto', sans-serif;
-          font-weight: 500;
-          font-size: 15px;
-          border-radius: 2px;
-          padding: 5px 0;
-          padding-left: 20px;
-          padding-right: 15px;
-          margin: 2px 0;
-          text-align: left;
-          text-decoration: none;
-          display: -ms-flexbox;
-          display: flex;
-          -webkit-align-items: center;
-          -moz-align-items: center;
-          -ms-align-items: center;
-          align-items: center;
-          justify-content: space-between;
-            -ms-flex-pack: distribute;
-        }
-        .dark-light:checked ~ .sec-center .section-dropdown a {
-          color: #102770;
-        }
-        .section-dropdown a{
-            padding: 7px 8px !important;
-        }
-        /* .sec-center a:hover {
-          color: #102770;
-          background-color: #ffeba7;
-        } */
-        .dark-light:checked ~ .sec-center .section-dropdown a:hover {
-          color: #ffeba7;
-          background-color: #102770;
-        }
-        .sec-center a .si {
-          font-size: 22px;
-        }   
-
-        @media screen and (min-width: 991px) {
-            .sec-center {
-                padding-top: 1.3rem;
-            }
-            
-         }
-         @media screen and (min-width: 991px) {
-.dropdown:not(:checked) + label .si {
-          font-size: 24px;
-          /* margin-left: 100%; */
-        }
-         }
-          </style>
+    </style>
 
 
 </head>
@@ -250,28 +113,38 @@
                                         <a href="about.html">About Us</a>
                                     </li>
 
-                                    <li class="nav-item sec-center"> 
-                                        <a style="display: inline;" href="services.html">Services</a>	
-                                        <input class="dropdown" type="checkbox" id="dropdown" name="dropdown"/>
-                                        <label style="display: inline; cursor: pointer;" class="for-dropdown" for="dropdown"><i class="si bi bi-arrow-down-short"></i></label>
-                                        <div class="section-dropdown"> 
-                                          <a href="#">Pressure <i class="si bi bi-arrow-right-short"></i></i></a>
-                                          <a href="#">Temprature<i class="si bi bi-arrow-right-short"></i></i></a>
-                                          <a href="#">Misellaneous<i class=" si bi bi-arrow-right-short"></i></i></a>
-                                          <a href="#">Electrical<i class=" si bi bi-arrow-right-short"></i></i></a>
-                                          <a href="#">Dimentional<i class=" si bi bi-arrow-right-short"></i></i></a>
-                                          <a href="#">Force&Torque<i class=" si bi bi-arrow-right-short"></i></i></a>
-                                          <a href="#">Lifiting Equipments<i class=" si bi bi-arrow-right-short"></i></i></a>
-                                          <a href="#">Non Destructive Testing<i class=" si bi bi-arrow-right-short"></i></i></a>
-                                          <a href="#">Electrical Testing<i class=" si bi bi-arrow-right-short"></i></i></a>
+                                    <li class="nav-item sec-center">
+                                        <a style="display: inline;" href="services.html">Services</a>
+                                        <input class="dropdown" type="checkbox" id="dropdown" name="dropdown" />
+                                        <label style="display: inline; cursor: pointer;" class="for-dropdown"
+                                            for="dropdown"><i class="si bi bi-arrow-down-short"></i></label>
+                                        <div class="section-dropdown">
+                                            <a href="pressure.html">Pressure <i
+                                                    class="si bi bi-arrow-right-short"></i></i></a>
+                                            <a href="temprature.html">Temprature<i
+                                                    class="si bi bi-arrow-right-short"></i></i></a>
+                                            <a href="Misellaneous.html">Misellaneous<i
+                                                    class=" si bi bi-arrow-right-short"></i></i></a>
+                                            <a href="electrical.html">Electrical<i
+                                                    class=" si bi bi-arrow-right-short"></i></i></a>
+                                            <a href="dimentional.html">Dimentional<i
+                                                    class=" si bi bi-arrow-right-short"></i></i></a>
+                                            <a href="Force&Torque.html">Force&Torque<i
+                                                    class=" si bi bi-arrow-right-short"></i></i></a>
+                                            <a href="Lifting-Equipment-Inspection.html">Lifiting Equipments<i
+                                                    class=" si bi bi-arrow-right-short"></i></i></a>
+                                            <a href="Non-Destructive-Testing-Services.html">Non Destructive Testing<i
+                                                    class=" si bi bi-arrow-right-short"></i></i></a>
+                                            <a href="Electrical-Testing.html">Electrical Testing<i
+                                                    class=" si bi bi-arrow-right-short"></i></i></a>
                                         </div>
-                                      </li>
-
+                                    </li>
+                                    
                                     <!-- <li class="nav-item">
                                         <a href="services.html" class="services-link">Services</a>
                                     </li> -->
 
-                                    
+
                                     <!-- <li class="nav-item">
                                         <a class="page-scroll" href="#case">Cases</a>
                                     </li> -->
@@ -887,7 +760,7 @@
     <script src="assets/js/main.js"></script>
 
 
-    
+
 </body>
 
 </html>

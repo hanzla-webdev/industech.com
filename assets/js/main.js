@@ -178,18 +178,23 @@ $(function() {
     //===== 
 
 
+});
 
+document.addEventListener('DOMContentLoaded', function () {
+    var submenu = document.querySelector('.section-dropdown');
+    var dropdownCheckbox = document.querySelector('.dropdown');
+    var dropdownLabel = document.querySelector('.for-dropdown');
 
+    dropdownLabel.addEventListener('click', function (e) {
+        e.stopPropagation();
+        submenu.classList.toggle('open');
+    });
 
-
-
-
-
-
-
-
-
-
-
-
+    document.addEventListener('click', function (e) {
+        var targetElement = e.target;
+        if (!targetElement.closest('.sec-center')) {
+            submenu.classList.remove('open');
+            dropdownCheckbox.checked = false;
+        }
+    });
 });
