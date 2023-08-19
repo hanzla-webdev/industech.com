@@ -43,7 +43,7 @@
 
     <link rel="stylesheet" href="assets/css/services.css">
 
-    <link rel="stylesheet" href="./assets/php/mail.php">
+    <!-- <link rel="stylesheet" href="./assets/php/mail.php"> -->
 
 
 </head>
@@ -78,15 +78,18 @@
                             <a class="navbar-brand" href="index.html">
                                 <img src="./assets/images/logo-nav.png" style="width: 120px; height: 87px;" alt="Logo">
 
-                               
+
                                 <!-- <h3 class="logo-heading">  <span style="color: #0898E7;"> IndTech </span> Calibration & Inspection Services (Pvt.) Ltd  </h3> -->
                             </a>
 
                             <div class="header-banner-image">
-                                <img src="./assets/images/header-banner-image.png" style="width: 31rem;" class="d-none d-md-block" alt="">
-                             </div>
+                                <img src="./assets/images/header-banner-image.png" style="width: 31rem;"
+                                    class="d-none d-md-block" alt="">
+                            </div>
 
-                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <button class="navbar-toggler" type="button" data-toggle="collapse"
+                                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                aria-expanded="false" aria-label="Toggle navigation">
                                 <span class="toggler-icon"></span>
                                 <span class="toggler-icon"></span>
                                 <span class="toggler-icon"></span>
@@ -104,23 +107,53 @@
                                         <a href="services.html">Services</a>
                                     </li> -->
 
-                                    <li class="nav-item">
-                                        <a href="services.html" class="services-link">
-                                            <!-- Services <i class="bi bi-chevron-down"> -->
-                                                Services
-                                            </i>
-                                        </a>
-                                        <!-- <ul class="submenu">
-                                            <li><a href="service1.html">Service 1</a></li>
-                                            <li><a href="service2.html">Service 2</a></li>
-                                            <li><a href="service3.html">Service 3</a></li>
-                                        </ul> -->
+                                    <li class="nav-item sec-center">
+                                        <a style="display: inline; margin-right: -7px;" href="services.html">Services</a>
+                                        <input class="dropdown" type="checkbox" id="dropdown" name="dropdown" />
+                                        <label style="display: inline; cursor: pointer;" class="for-dropdown"
+                                            for="dropdown"><i class="si bi bi-arrow-down-short"></i></label>
+                                        <div class="section-dropdown">
+
+                                            <input class="dropdown-sub" type="checkbox" id="dropdown-sub"
+                                                name="dropdown-sub" />
+                                            <label class="for-dropdown-sub" for="dropdown-sub">What we Calibrate?<i
+                                                    class="bi bi-plus"></i></label>
+                                            <div class="section-dropdown-sub">
+                                                <a href="pressure.html">Pressure <i
+                                                        class="si bi bi-arrow-right-short"></i></i></a>
+                                                <a href="temprature.html">Temprature<i
+                                                        class="si bi bi-arrow-right-short"></i></i></a>
+                                                <a href="Misellaneous.html">Misellaneous<i
+                                                        class=" si bi bi-arrow-right-short"></i></i></a>
+                                                <a href="electrical.html">Electrical<i
+                                                        class=" si bi bi-arrow-right-short"></i></i></a>
+                                                <a href="dimentional.html">Dimentional<i
+                                                        class=" si bi bi-arrow-right-short"></i></i></a>
+                                                <a href="Force&Torque.html">Force&Torque<i
+                                                        class=" si bi bi-arrow-right-short"></i></i></a>
+                                            </div>
+
+
+
+                                            <input class="dropdown-sub2" type="checkbox" id="dropdown-sub2"
+                                                name="dropdown-sub2" />
+                                            <label class="for-dropdown-sub" for="dropdown-sub2">What we Inspect? <i
+                                                    class="bi bi-plus"></i></label>
+                                            <div class="section-dropdown-sub2">
+                                                <a href="Lifting-Equipment-Inspection.html">Lifiting Equipments<i
+                                                    class=" si bi bi-arrow-right-short"></i></i></a>
+                                            <a href="Non-Destructive-Testing-Services.html">Non Destructive
+                                                Testing<i class=" si bi bi-arrow-right-short"></i></i></a>
+                                            <a href="Electrical-Testing.html">Electrical Testing<i
+                                                    class=" si bi bi-arrow-right-short"></i></i></a>
+                                            </div>
+                                        </div>
                                     </li>
                                     <!-- <li class="nav-item">
                                         <a class="page-scroll" href="#case">Cases</a>
                                     </li> -->
                                     <li class="nav-item">
-                                        <a  href="career.html">Career</a>
+                                        <a href="career.html">Career</a>
                                     </li>
                                     <li class="nav-item">
                                         <a href="license.html">License</a>
@@ -135,7 +168,7 @@
                             </div>
                             <!-- navbar collapse -->
 
-                           
+
                         </nav>
                         <!-- navbar -->
                     </div>
@@ -147,38 +180,59 @@
 
     </header>
 
-    
+
     <!-- Main contact Form -->
 
-   <div class="container">
-    <div class="row">
-        <div class="col-lg-10 mx-auto " style="margin-top: 5rem;">
-            <div class="footer_form mt-45">
-                <h2 class="footer_title get-in-touch">Get in Touch</h2>
-                <form id="contact-form" method="post" action="mail.php">
-                    <div class="single_form">
-                        <input type="text" id="Name" placeholder="name" name="Name">
-                    </div>
-                    <!-- single form -->
-                    <div class="single_form">
-                        <input type="text" placeholder="Email" id="email" name="email">
-                    </div>
-                    <!-- single form -->
-                    <div class="single_form">
-                        <textarea placeholder="Message" id="message" name="message"></textarea>
-                    </div>
-                    <!-- single form -->
-                    <p class="form-message"></p>
-                    <div class="single_form text-center mx-auto">
-                        <button class="main-btn ">Send</button>
-                    </div>
-                    <!-- single form -->
-                </form>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-10 mx-auto " style="margin-top: 5rem;">
+                <div class="footer_form mt-45">
+                    <h2 class="footer_title get-in-touch">Get in Touch</h2>
+                    <form id="contact-form" onsubmit="event.preventDefault(); sendEmail();" reset(); return false;>
+                        <div class="single_form">
+                            <input type="text" id="Name" placeholder="name" name="Name">
+                        </div>
+                        <!-- single form -->
+                        <div class="single_form">
+                            <input type="text" placeholder="Email" id="email" name="email">
+                        </div>
+                        <div class="single_form">
+                            <input type="text" placeholder="Phone no." id="Phone" name="Phone">
+                        </div>
+                        <!-- single form -->
+                        <div class="single_form">
+                            <textarea placeholder="How can we help you?" id="message" name="message"></textarea>
+                        </div>
+                        <!-- single form -->
+                        <p class="form-message"></p>
+                        <div class="single_form text-center mx-auto">
+                            <button type="submit" class="main-btn ">Send</button>
+                        </div>
+                        <!-- single form -->
+                    
+                    </form>
+                </div>
+                <!-- footer form -->
             </div>
-            <!-- footer form -->
         </div>
     </div>
-   </div>
+
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        function sendEmail() {
+            Email.send({
+                Host: "smtp.gmail.com",
+                Username: "mhanzla1408@gmail.com",
+                Password: "hanzla1234",
+                To: 'hassan64061115@gmail.com',
+                From: document.getElementById("email").value,
+                Subject: "New Contact Form Enquiry",
+                Body: "And this is the body"
+            }).then(
+                message => alert(message)
+            );
+        }
+    </script>
     <!-- Main contact Form  Ends Here-->
 
 
@@ -235,7 +289,7 @@
                         </div>
                         <!-- footer link wrapper -->
                     </div>
-                   
+
                 </div>
                 <!-- row -->
             </div>
@@ -286,7 +340,7 @@
     <script src="assets/js/slick.min.js"></script>
 
     <!--====== Ajax Contact js ======-->
-    <script src="assets/js/ajax-contact.js"></script>
+    <!-- <script src="assets/js/ajax-contact.js"></script> -->
 
     <!--====== Appear js ======-->
     <script src="assets/js/jquery.appear.min.js"></script>
@@ -302,7 +356,9 @@
     <script src="assets/js/main.js"></script>
 
     <!-- js contact link -->
-    <script src="./assets/js/contact.js"></script>
+    <!-- <script src="./assets/js/contact.js"></script> -->
+
+    
 
 </body>
 
