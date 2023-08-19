@@ -2254,7 +2254,7 @@ p {
 .dropdown:checked+label .si {
     transform: rotate(180deg);
     font-size: 24px;
-    /* margin-left: 10px; */
+    /* margin-left: -10px; */
     transition: transform 200ms linear;
 }
 
@@ -2287,7 +2287,7 @@ p {
 .dropdown:checked~.section-dropdown {
     opacity: 1;
     pointer-events: auto;
-    width: 180% !important;
+    width: 231%!important;
     transform: translateY(0);
 }
 
@@ -2393,7 +2393,7 @@ p {
     .dropdown:checked~.section-dropdown {
         opacity: 1;
         pointer-events: auto;
-        width: 83% !important;
+        width: 74% !important;
         transform: translateY(0);
     }
 }
@@ -2403,7 +2403,7 @@ p {
             position: relative;
             color: #fff;
             transition: all 200ms linear;
-            font-family: 'Roboto', sans-serif;
+            /* font-family: 'Roboto', sans-serif; */
             font-weight: 500;
             font-size: 18px;
             border-radius: 2px;
@@ -2428,7 +2428,7 @@ p {
             position: relative;
             color: #fff;
             transition: all 200ms linear;
-            font-family: 'Roboto', sans-serif;
+            /* font-family: 'Roboto', sans-serif; */
             font-weight: 500;
             font-size: 18px;
             border-radius: 2px;
